@@ -1,0 +1,59 @@
+.discount-slider {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 16px 0;
+}
+
+.discount-card {
+  background: #e0e0e0;
+  border-radius: 12px;
+  width: 180px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.discount-card img {
+  width: 120px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.discount-info {
+  width: 100%;
+  background: #ccc;
+  border-radius: 0 0 12px 12px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.discount-title {
+  font-size: 1rem;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 4px;
+}
+
+.new-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+
+.cart-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
