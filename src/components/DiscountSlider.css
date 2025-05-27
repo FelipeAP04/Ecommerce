@@ -8,17 +8,19 @@
 .discount-card {
   background: #e0e0e0;
   border-radius: 12px;
-  width: 180px;
-  min-width: 180px;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1; /* Ensures the card is always square */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .discount-card img {
-  width: 120px;
-  height: 90px;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
   margin-bottom: 8px;
 }
@@ -27,10 +29,13 @@
   width: 100%;
   background: #ccc;
   border-radius: 0 0 12px 12px;
-  padding: 8px;
+  padding: 8px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .discount-title {
@@ -39,6 +44,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 15px;
 }
 
 .old-price {

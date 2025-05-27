@@ -5,35 +5,35 @@ const products = [
   {
     id: 1,
     name: 'DSi',
-    img: '/assets/dsi.png',
+    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965309/dsi_n02ibc.png',
     oldPrice: 60,
     price: 45,
   },
   {
     id: 2,
     name: 'Play station PSP',
-    img: '/assets/psp.png',
+    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965310/psp_fvik6q.png',
     oldPrice: 80,
     price: 75,
   },
   {
     id: 3,
     name: 'Nintendo Entertainment System',
-    img: '/assets/nes.png',
+    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965309/nes_k92zdy.png',
     oldPrice: 70,
     price: 60,
   },
   {
     id: 4,
     name: 'Play Station 3',
-    img: '/assets/ps3.png',
+    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965309/ps3_vvz2wm.png',
     oldPrice: 120,
     price: 95,
   },
   {
     id: 5,
     name: 'Wii',
-    img: '/assets/wii.png',
+    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965320/wii_org0cf.png',
     oldPrice: 80,
     price: 75,
   },
@@ -42,12 +42,11 @@ const products = [
 function DiscountSlider() {
   const navigate = useNavigate();
   return (
-    <div className="discount-slider" style={{ marginBottom: 16 }}>
+    <div className="discount-slider">
       {products.map((p, i) => (
         <div
           className="discount-card"
           key={i}
-          style={{ cursor: 'pointer' }}
           onClick={() => navigate(`/producto/${p.id}`)}
         >
           <img src={p.img} alt={p.name} />

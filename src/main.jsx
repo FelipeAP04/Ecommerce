@@ -1,13 +1,8 @@
-// @ts-ignore
-import HomePage from "./pages/HomePage";
-// @ts-ignore
-import ProductDetailPage from "./pages/ProductDetailPage";
-// @ts-ignore
-import CartPage from "./pages/CartPage";
-import { CartProvider } from "./context/CartContext"; // Import CartProvider
-
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import CartPage from "./pages/CartPage";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (

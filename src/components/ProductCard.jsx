@@ -5,7 +5,7 @@ function ProductCard({ product, onClick }) {
   return (
     <div
       style={{
-        width: 200,
+        width: 400,
         background: "#e0e0e0",
         borderRadius: 12,
         padding: 12,
