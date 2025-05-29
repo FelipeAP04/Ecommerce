@@ -2,64 +2,93 @@
   display: flex;
   gap: 24px;
   overflow-x: auto;
-  padding: 16px 0;
+  padding: 40px 0;
+  color: rgb(197, 197, 197);
 }
 
 .discount-card {
   background: #e0e0e0;
   border-radius: 12px;
-  width: 100%;
-  max-width: 300px;
-  aspect-ratio: 1; /* Ensures the card is always square */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 200px;
   position: relative;
   flex-shrink: 0;
-}
-
-.discount-card img {
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
-  margin-bottom: 8px;
-}
-
-.discount-info {
-  width: 100%;
-  background: #ccc;
-  border-radius: 0 0 12px 12px;
-  padding: 8px 0;
+  text-align: center;
+  padding: 50px 8px 8px;
+  box-shadow: 0 4px 8px rgba(91, 91, 91, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-end;
+  background-size: 50% 50%;
+  overflow: visible;
+}
+
+.discount-card:nth-child(4n + 1) {
+  background: rgb(240, 83, 83);
+}
+
+.discount-card:nth-child(4n + 2) {
+  background: rgb(242, 242, 112);
+}
+
+.discount-card:nth-child(4n + 3) {
+  background: rgb(59, 139, 193);
+}
+
+.discount-card:nth-child(4n + 4) {
+  background: rgb(132, 241, 132);
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
 }
 
 .discount-title {
+  margin-top: 25%;
   font-size: 1rem;
-  margin-bottom: 4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  padding-left: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Outline effect */
+}
+
+.discount-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .old-price {
   text-decoration: line-through;
   color: #888;
-  margin-right: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Outline effect */
 }
 
 .new-price {
   font-weight: bold;
-  font-size: 1.1rem;
-  margin-right: 8px;
+  font-size: 1.2rem;
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Outline effect */
 }
 
-.cart-icon {
-  font-size: 1.2rem;
-  vertical-align: middle;
+.add-to-cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.add-to-cart-button img {
+  width: 32px;
+  height: 32px;
 }

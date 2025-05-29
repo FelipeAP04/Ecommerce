@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "DSi",
+    "description": "Consola portátil de Nintendo",
+    "price": 45,
+    "oldPrice": 60,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1747965309/dsi_n02ibc.png",
+    "options": ["Rojo", "Azul", "Negro"],
+    "reviews": [
+      { "user": "User1", "comment": "Great product!", "rating": 5 },
+      { "user": "User5", "comment": "NO ME FUNCIONA LA CONSOLA QUE ME ENVIARON! porlomenos es bonita", "rating": 1 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 2,
+    "name": "Play station PSP",
+    "description": "Consola portátil de Sony",
+    "price": 75,
+    "oldPrice": 80,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1747965310/psp_fvik6q.png",
+    "options": ["Blanco", "Negro"],
+    "reviews": [
+      { "user": "User7", "comment": "La PSP es increíble, la pantalla es nítida y la batería dura bastante.", "rating": 5 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 3,
+    "name": "Nintendo Entertainment System",
+    "description": "Consola clásica de Nintendo",
+    "price": 60,
+    "oldPrice": 70,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1747965309/nes_k92zdy.png",
+    "options": ["Original", "Edición limitada"],
+    "reviews": [
+      { "user": "User23", "comment": "The NES still works perfectly after all these years, a true classic!", "rating": 5 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 4,
+    "name": "Play Station 3",
+    "description": "Consola de Sony",
+    "price": 95,
+    "oldPrice": 120,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1747965309/ps3_vvz2wm.png",
+    "options": ["Negro", "Blanco"],
+    "reviews": [
+      { "user": "User50", "comment": "Battery life is terrible, but the design is sleek.", "rating": 2 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 5,
+    "name": "Wii",
+    "description": "Consola de Nintendo con controles de movimiento",
+    "price": 75,
+    "oldPrice": 80,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1747965320/wii_org0cf.png",
+    "options": ["Blanco", "Negro"],
+    "reviews": [
+      { "user": "User41", "comment": "Perfect condition, includes all cables!", "rating": 5 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 6,
+    "name": "Control NES",
+    "description": "Control clásico de NES",
+    "price": 20,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1748382785/Control_nes_oqoyv7.jpg",
+    "options": ["Original"],
+    "reviews": [
+      { "user": "User19", "comment": "El control de NES es original y funciona bien, aunque está un poco gastado.", "rating": 4 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 7,
+    "name": "Control PS3",
+    "description": "Control inalámbrico de PS3",
+    "price": 30,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1748382831/Control_ps3_tjoodd.jpg",
+    "options": ["Negro", "Blanco"],
+    "reviews": [
+      { "user": "User45", "comment": "PS3 controller works wirelessly but the analog sticks are a bit loose.", "rating": 3 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 8,
+    "name": "Control Wii",
+    "description": "Control de movimiento para Wii",
+    "price": 25,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1748382935/Control_wii_wymkrg.jpg",
+    "options": ["Blanco", "Negro"],
+    "reviews": [
+      { "user": "User27", "comment": "Control de Wii en perfecto estado, el motion sensing es preciso.", "rating": 5 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 9,
+    "name": "Cable HDMI",
+    "description": "Cable HDMI de alta velocidad",
+    "price": 10,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1747965309/hdmi_gdmbyr.jpg",
+    "options": ["1m", "2m"],
+    "reviews": [
+      { "user": "User3", "comment": "El cable HDMI es de buena calidad, sin interferencias en la imagen.", "rating": 5 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 10,
+    "name": "Adaptador NES",
+    "description": "Adaptador de corriente para NES",
+    "price": 15,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1748383135/Corriente_nes_rgfzek.jpg",
+    "options": ["Original"],
+    "reviews": [
+      { "user": "User6", "comment": "El adaptador de NES no funciona bien, la consola no enciende.", "rating": 1 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 11,
+    "name": "Cable AV",
+    "description": "Cable AV para consolas retro",
+    "price": 8,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1748383287/VGA_u6olpk.jpg",
+    "options": ["1m", "2m"],
+    "reviews": [
+      { "user": "User22", "comment": "Cable AV de buena calidad, pero la imagen no es tan clara como HDMI.", "rating": 3 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 12,
+    "name": "Batería PSP",
+    "description": "Batería de repuesto para PSP",
+    "price": 20,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1748383380/bateria_pb3pyu.webp",
+    "options": ["Original"],
+    "reviews": [
+      { "user": "User40", "comment": "La batería de PSP dura poco, necesito cargarla muy seguido.", "rating": 2 }
+    ],
+    "favorite": false
+  },
+  {
+    "id": 13,
+    "name": "Fuente de poder Wii",
+    "description": "Fuente de poder para Wii",
+    "price": 25,
+    "img": "https://res.cloudinary.com/dfknt6m8i/image/upload/e_background_removal/f_png/v1748383516/Corriente_wii_x7wtwh.png",
+    "options": ["Original"],
+    "reviews": [
+      { "user": "User11", "comment": "Fuente de poder de Wii original, funciona sin problemas.", "rating": 5 }
+    ],
+    "favorite": false
+  }
+]

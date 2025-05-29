@@ -1,62 +1,32 @@
 import './DiscountSlider.css';
 import { useNavigate } from 'react-router-dom';
-
-const products = [
-  {
-    id: 1,
-    name: 'DSi',
-    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965309/dsi_n02ibc.png',
-    oldPrice: 60,
-    price: 45,
-  },
-  {
-    id: 2,
-    name: 'Play station PSP',
-    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965310/psp_fvik6q.png',
-    oldPrice: 80,
-    price: 75,
-  },
-  {
-    id: 3,
-    name: 'Nintendo Entertainment System',
-    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965309/nes_k92zdy.png',
-    oldPrice: 70,
-    price: 60,
-  },
-  {
-    id: 4,
-    name: 'Play Station 3',
-    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965309/ps3_vvz2wm.png',
-    oldPrice: 120,
-    price: 95,
-  },
-  {
-    id: 5,
-    name: 'Wii',
-    img: 'https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965320/wii_org0cf.png',
-    oldPrice: 80,
-    price: 75,
-  },
-];
+import products from '../data/products.json';
 
 function DiscountSlider() {
   const navigate = useNavigate();
+  const discountedProducts = products.filter((p) => p.oldPrice && p.price); 
+
   return (
     <div className="discount-slider">
-      {products.map((p, i) => (
+      {discountedProducts.map((p) => (
         <div
           className="discount-card"
-          key={i}
+          key={p.id}
           onClick={() => navigate(`/producto/${p.id}`)}
         >
-          <img src={p.img} alt={p.name} />
-          <div className="discount-info">
-            <div className="discount-title">{p.name.length > 15 ? p.name.slice(0, 15) + "..." : p.name}</div>
-            <div>
+          <img src={p.img} alt={p.name} className="product-image" />
+          <div className="discount-title">{p.name}</div>
+          <div className="discount-info"  style={{ display: 'flex', alignContent: 'space-between', flexDirection: 'row' }}>
+            <div className="price-container"  style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
               <span className="old-price">{p.oldPrice}$</span>
               <span className="new-price">{p.price}$</span>
-              <span className="cart-icon">🛒</span>
             </div>
+            <button className="add-to-cart-button">
+              <img
+                src="https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965319/Shopping_bag_nzrv31.png"
+                alt="Add to cart"
+              />
+            </button>
           </div>
         </div>
       ))}

@@ -22,7 +22,7 @@ function ProductCard({ product, onClick }) {
       </div>
       {product.discount && <DiscountBadge />}
       <div style={{ position: "absolute", top: 8, right: 8 }}>
-        <FavoriteButton />
+        <FavoriteButton productId={product.id} />
       </div>
       <button style={{
         marginTop: 8,

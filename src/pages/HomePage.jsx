@@ -9,7 +9,7 @@ function HomePage() {
       <main style={{ padding: 24 }}>
         <h2>Productos en descuento</h2>
         <DiscountSlider />
-        <div style={{ height: 32 }} /> {/* Spacer */}
+        <div style={{ height: 32 }} /> {/* Separacion */}
         <Categories />
       </main>
     </div>
