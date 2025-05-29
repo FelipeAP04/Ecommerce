@@ -4,9 +4,9 @@ import HomePage from "./pages/HomePage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 // @ts-ignore
 import CartPage from "./pages/CartPage";
-import { CartProvider } from "./context/CartContext"; // Import CartProvider
-import { FavoriteProvider } from "./context/FavoriteContext"; // Import FavoriteProvider
-import { VisitedProvider } from "./context/VisitedContext"; // Import VisitedProvider
+import { CartProvider } from "./context/CartContext";
+import { FavoriteProvider } from "./context/FavoriteContext"; 
+import { VisitedProvider } from "./context/VisitedContext";
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -16,7 +16,7 @@ function App() {
     <VisitedProvider>
       <FavoriteProvider>
         <CartProvider>
-          <Router>
+          <Router basename="/Ecommerce">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/producto/:id" element={<ProductDetailPage />} />

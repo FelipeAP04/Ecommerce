@@ -26,7 +26,7 @@ function Categories() {
         <div className="categorias1" onClick={() => handleOpen("Consolas")} style={{ cursor: "pointer" }}>
           <img src="https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965308/consolas_hbktt2.jpg" alt="Consolas" />
           <div className="tituloOlink">
-            <h2 style={{ fontSize: '3rem', margin: 0 }}>Consolas</h2>
+            <h2 style={{ fontSize: '3rem', margin: 0, fontStyle: "bold" }}>Consolas</h2>
             <button className="cat-btn" type="button">Ir ahora</button>
           </div>
         </div>
@@ -34,7 +34,7 @@ function Categories() {
           <div className="categorias1" onClick={() => handleOpen("Controles y perifericos")} style={{ cursor: "pointer" }}>
             <img src="https://res.cloudinary.com/dfknt6m8i/image/upload/v1747965308/controles_hcqnlv.jpg" alt="Controles y perifericos" style={{ width: '235px' }} />
             <div className="tituloOlink">
-              <div>Controles y<br />perifericos</div>
+              <div style={{fontStyle: "bold"}}>Controles y<br />perifericos</div>
               <button className="cat-btn" type="button">Ir ahora</button>
             </div>
           </div>

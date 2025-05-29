@@ -9,7 +9,7 @@ function App() {
   return (
     <VisitedProvider>
       <CartProvider>
-        <Router>
+        <Router basename="/Ecommerce">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/producto/:id" element={<ProductDetailPage />} />
